@@ -32,32 +32,34 @@ const HowItWorks = () => {
     <section className="how-it-works bg-black text-white py-20 px-10">
       {/* Title Section */}
       <div className="text-center mb-12">
-        <h2 className="text-8xl font-medium leading-tight">
-          How it <span class="font-medium ">
-              <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-300 to-indigo-500">
+        <h2 className="text-[clamp(30px,5vw,90px)] font-medium tracking-[clamp(-1.76px)] text-white">
+          How it{" "}
+          <span className="font-medium text-[clamp(30px,5vw,90px)] tracking-[-1.76px]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-300 to-indigo-500">
               Works
-              </span>
             </span>
+          </span>
         </h2>
       </div>
-
       {/* Steps */}
-      <div className="flex gap-8">
+      <div className="flex md:flex-row gap-8">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="step-card rounded-lg p-6 text-center"
+            className="step-card rounded-lg p-6 text-center flex-1"
           >
             <p className="uppercase text-sm text-gray-400 mb-4">{step.step}</p>
             <div className="mb-4">
               <img
                 src={step.imageSrc}
                 alt={`Illustration for ${step.step}`}
-                className="mx-auto h-10 w-10 object-cover"
+                className="mx-auto h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 lg:h-28 lg:w-28 object-cover"
               />
             </div>
-            <h3 className="text-xl font-medium mb-2">{step.title}</h3>
-            <p className="text-sm text-gray-300">{step.description}</p>
+            <h3 className="text-xl sm:text-xl lg:text-2xl font-medium mb-2">
+              {step.title}
+            </h3>
+            <p className="text-lg text-gray-300">{step.description}</p>
           </div>
         ))}
       </div>

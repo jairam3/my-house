@@ -4,7 +4,7 @@ const Library = () => {
   return (
     <>
       <div class="flex flex-col items-center justify-center bg-black text-white">
-        <div class="mb-4">
+        <div class="py-10">
           <a
             href="#"
             class="inline-flex items-center border border-white px-3 py-3 bg-[#0e0c0d] rounded-2xl"

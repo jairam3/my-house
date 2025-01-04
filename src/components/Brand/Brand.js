@@ -30,7 +30,7 @@ const Brand = () => {
             key={index}
           >
             <div className="flex items-center">
-              <h2 className="text-lg font-bold">{item}</h2>
+              <h2 className="text-lg md:text-xl font-bold">{item}</h2>
             </div>
             <div className="text-center">
               <button className="bg-gray-200 px-4 py-2 rounded-md text-sm md:text-base">

@@ -3,28 +3,34 @@ import React from "react";
 const StoreDataModel = () => {
   return (
     <>
-      <div className="bg-black text-white flex md:flex-row justify-between py-16 px-12">
-        <div className="max-w-lg">
-          <p className="text-8xl font-bold">
-            <span>Your </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
-              Store
-            </span>
-          </p>
-          <br />
-          <p className="text-8xl font-bold">
-            <span>Your </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
-              Data
-            </span>
-          </p>
-          <br />
-          <p className="text-8xl font-bold">
-            <span>Your </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500">
-              Mode
-            </span>
-          </p>
+      <div className="bg-black text-white flex justify-between px-12">
+        <div className="max-w-lg px-10">
+          <div className="">
+            <h2 className="text-[clamp(30px,5vw,90px)] font-medium tracking-[clamp(-1.76px)] text-white">
+            Your{" "}
+              <span className="font-medium text-[clamp(30px,5vw,90px)] tracking-[-1.76px]">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-300 to-indigo-500">
+                  Store
+                </span>
+              </span>
+            </h2>
+            <h2 className="text-[clamp(30px,5vw,90px)] font-medium tracking-[clamp(-1.76px)] text-white">
+            Your{" "}
+              <span className="font-medium text-[clamp(30px,5vw,90px)] tracking-[-1.76px]">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-300 to-indigo-500">
+                  Data
+                </span>
+              </span>
+            </h2>
+            <h2 className="text-[clamp(30px,5vw,90px)] font-medium tracking-[clamp(-1.76px)] text-white">
+            Your{" "}
+              <span className="font-medium text-[clamp(30px,5vw,90px)] tracking-[-1.76px]">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-pink-300 to-indigo-500">
+                  Model
+                </span>
+              </span>
+            </h2>
+          </div>
           <p className="text-2xl mt-20">
             With House of Models, your brand gets access to the best AI outcomes
             and workflows possible to generate new, personalized media.

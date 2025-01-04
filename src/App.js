@@ -1,5 +1,5 @@
 import React from "react";
-import Homepage from "./components/HomePage/Homepage";
+import HomePage from "./components/HomePage/HomePage";
 import VideoPage from "./components/VideoPage/VideoPage";
 import ExploreSection from "./components/ExploreSection/ExploreSection";
 import Group from "./components/Group/Group";
@@ -18,7 +18,7 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   return (
     <div>
-      <Homepage />
+      <HomePage />
       <VideoPage />
       <ExploreSection/>
       <Group />

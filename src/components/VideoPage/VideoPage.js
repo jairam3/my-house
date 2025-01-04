@@ -2,20 +2,20 @@ import React from "react";
 
 const VideoPage = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative overflow-hidden">
       {/* Background/Overlays */}
-      <div className="absolute top-0 left-0 w-full h-full bg-transparent z-10"></div>
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 z-20"></div>
+      <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black opacity-100 z-50"></div>
+      <div className="absolute  w-full h-full bg-gradient-to-b from-transparent to-black opacity-100 z-50"></div>
 
       {/* Video */}
-      <div className="relative z-0 w-full h-full">
+      <div className="relative ">
         <video
           src="https://framerusercontent.com/assets/oi6sebXDmnVMQbvHHKXGiG0hNw.mp4"
           loop
           playsInline
           autoPlay
           muted
-          className="w-full h-full object-cover"
+          className="object-cover"
           style={{
             cursor: "auto",
             borderRadius: "0px",
@@ -33,8 +33,8 @@ const VideoPage = () => {
         <p className="mt-4 text-center text-lg md:text-xl">
           Enjoy our content and explore more!
         </p>
-        <button className="mt-6 px-6 py-2 bg-blue-600 rounded-full text-white hover:bg-blue-700 transition">
-          Get Started
+        <button className="mt-6 text-white text-lg font-bold py-4 px-16  rounded-full border border-white">
+          Join Waitlist
         </button>
       </div>
     </div>

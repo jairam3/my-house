@@ -2,7 +2,7 @@ import React from "react";
 
 const SuperchargeSection = () => {
   return (
-    <div className=" bg-black py-20">
+    <div className=" bg-black">
       <div className="relative p-32">
         <div className="absolute inset-0 mt-48">
           <img
